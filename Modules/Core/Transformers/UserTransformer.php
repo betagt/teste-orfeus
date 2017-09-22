@@ -6,7 +6,6 @@ use Modules\Core\Models\User;
 use Modules\Localidade\Transformers\EnderecoTransformer;
 use Modules\Localidade\Transformers\TelefoneTransformer;
 use Portal\Transformers\BaseTransformer;
-use Portal\Transformers\CardTransformer;
 
 /**
  * Class UserTransformer
@@ -15,7 +14,7 @@ use Portal\Transformers\CardTransformer;
 class UserTransformer extends BaseTransformer
 {
     public $availableIncludes = ['permissions', 'roles'];
-    public $defaultIncludes = [ 'endereco', 'telefones', 'cards'];
+    public $defaultIncludes = [ 'endereco', 'telefones'];
 
     /**
      * Transform the \User entity
@@ -55,6 +54,7 @@ class UserTransformer extends BaseTransformer
         }
         return $this->collection($model->permissions, new PermissionTransformer());
     }
+
     public function includeRoles(User $model)
     {
         if (!$model->return_roles) {
@@ -78,13 +78,4 @@ class UserTransformer extends BaseTransformer
         }
         return $this->item($model->endereco, new EnderecoTransformer());
     }
-
-    public function includeCards(User $model)
-    {
-        if (!$model->cards) {
-            return null;
-        }
-        return $this->collection($model->cards, new CardTransformer());
-    }
-
 }

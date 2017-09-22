@@ -1,5 +1,6 @@
 <?php
 
+namespace Modules\Localidade\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
@@ -14,6 +15,7 @@ class LocalidadeDatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-        $this->call(LocalizacaoTableSeeder::class);
+
+        // $this->call("OthersTableSeeder");
     }
 }

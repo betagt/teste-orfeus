@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4d28fb47d3b092513b879dd845b9d66",
+    "content-hash": "a7ae6787e3ac6cbc275584d7865df387",
     "packages": [
         {
             "name": "barryvdh/laravel-cors",
@@ -246,7 +246,7 @@
             ],
             "authors": [
                 {
-                    "name": "Diuliano Oliveira",
+                    "name": "diuliano oliveira",
                     "email": "diuliano0@gmail.com"
                 }
             ],
@@ -1775,16 +1775,16 @@
         },
         {
             "name": "laravel/passport",
-            "version": "v1.0.17",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/passport.git",
-                "reference": "f2a8af3a48adac02288779f59de95f46fef69b7a"
+                "reference": "f4ec49664be83f2a641cbfbb6d43cfb79f4aa95e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/passport/zipball/f2a8af3a48adac02288779f59de95f46fef69b7a",
-                "reference": "f2a8af3a48adac02288779f59de95f46fef69b7a",
+                "url": "https://api.github.com/repos/laravel/passport/zipball/f4ec49664be83f2a641cbfbb6d43cfb79f4aa95e",
+                "reference": "f4ec49664be83f2a641cbfbb6d43cfb79f4aa95e",
                 "shasum": ""
             },
             "require": {
@@ -1835,7 +1835,7 @@
                 "oauth",
                 "passport"
             ],
-            "time": "2016-12-21T13:51:02+00:00"
+            "time": "2017-07-12T20:03:53+00:00"
         },
         {
             "name": "lcobucci/jwt",
@@ -6645,7 +6645,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kodeine/laravel-acl": 20
+        "kodeine/laravel-acl": 20,
+        "laravel/passport": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

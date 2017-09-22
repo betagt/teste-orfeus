@@ -10,7 +10,6 @@ use Laravel\Passport\HasApiTokens;
 use Modules\Localidade\Models\Endereco;
 use Modules\Localidade\Models\Telefone;
 use OwenIt\Auditing\Auditable;
-use Portal\Models\Card;
 use Portal\Notifications\PasswordReset;
 use Prettus\Repository\Contracts\Transformable;
 use Prettus\Repository\Traits\TransformableTrait;
@@ -103,10 +102,6 @@ class User extends Authenticatable implements Transformable
         }
 
         return mask($this->attributes['cpf_cnpj'], '###.###.###-##');
-    }
-
-    public function cards(){
-        return $this->belongsToMany(Card::class, 'user_cards', 'user_id', 'card_id');
     }
 
     public function tipo(){
