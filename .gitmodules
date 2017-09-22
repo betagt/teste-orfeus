@@ -1,0 +1,12 @@
+[submodule "Modules/Anuncio"]
+	path = Modules/Anuncio
+	url = https://github.com/betagt/anuncio.git
+[submodule "Modules/Core"]
+	path = Modules/Core
+	url = https://github.com/betagt/core.git
+[submodule "Modules/Localidade"]
+	path = Modules/Localidade
+	url = https://github.com/betagt/localidade.git
+[submodule "Modules/Plano"]
+	path = Modules/Plano
+	url = https://github.com/betagt/plano.git
